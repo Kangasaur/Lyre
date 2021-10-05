@@ -29,31 +29,7 @@ public class CanvasEvents : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (letter.activeSelf)
-            {
-                letter.SetActive(false);
-                continueText.SetActive(false);
-                player.SendMessage("AllowMove");
-            }
-            else if (lyre.activeSelf)
-            {
-                lyre.SetActive(false);
-                continueText.SetActive(false);
-                player.SendMessage("AllowMove");
-            }
-            else if (dialogueText.activeSelf)
-            {
-                diaIndex++;
-                if (diaIndex == dialogue.Length)
-                {
-                    dialogueText.SetActive(false);
-                    continueText.SetActive(false);
-                    Destroy(oldMan);
-                    lyreSmall.SetActive(true);
-                    player.SendMessage("AllowMove");
-                }
-                else dialogueText.GetComponent<TextMeshProUGUI>().text = dialogue[diaIndex];
-            }
+            Deactivate();
         }
     }
 
@@ -73,5 +49,34 @@ public class CanvasEvents : MonoBehaviour
     {
         dialogueText.SetActive(true);
         continueText.SetActive(true);
+    }
+
+    void Deactivate()
+    {
+        if (letter.activeSelf)
+        {
+            letter.SetActive(false);
+            continueText.SetActive(false);
+            player.SendMessage("AllowMove");
+        }
+        else if (lyre.activeSelf)
+        {
+            lyre.SetActive(false);
+            continueText.SetActive(false);
+            player.SendMessage("AllowMove");
+        }
+        else if (dialogueText.activeSelf)
+        {
+            diaIndex++;
+            if (diaIndex == dialogue.Length)
+            {
+                dialogueText.SetActive(false);
+                continueText.SetActive(false);
+                Destroy(oldMan);
+                lyreSmall.SetActive(true);
+                player.SendMessage("AllowMove");
+            }
+            else dialogueText.GetComponent<TextMeshProUGUI>().text = dialogue[diaIndex];
+        }
     }
 }

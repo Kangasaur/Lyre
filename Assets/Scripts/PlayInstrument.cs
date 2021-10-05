@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,20 +13,20 @@ public class PlayInstrument : MonoBehaviour
     int voice = 0;
     bool hasLyre = false;
     bool canMove = false;
-    bool spellTrigger = false;
-
+    List<AudioClip> playedNotes = new List<AudioClip>();
+    AudioClip[] sunSong;
     Rigidbody2D myBody;
     float hmove, vmove;
 
     private void Start()
     {
         myBody = GetComponent<Rigidbody2D>();
+        sunSong = new AudioClip[] { g2, d3, c3, g3 };
         Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "Room 2")
         {
             hasLyre = true;
             canMove = true;
-            spellTrigger = true;
         }
     }
 
@@ -79,6 +80,15 @@ public class PlayInstrument : MonoBehaviour
         }
         if (voice < 3) voice++;
         else voice = 0;
+
+        if (note == g2) playedNotes.Clear();
+        playedNotes.Add(note);
+        if (playedNotes.ToArray().SequenceEqual(sunSong) && GameObject.Find("Sun"))
+        {
+            GameObject.Find("Sun").GetComponent<SpriteRenderer>().enabled = true;
+            GameObject.Find("Sun Rays").GetComponent<SpriteRenderer>().enabled = true;
+            canvas.SendMessage("Deactivate");
+        }
     }
 
     void AllowMove()
