@@ -33,7 +33,7 @@ public class CameraFollow : MonoBehaviour
         camY = Mathf.Clamp(followTransform.position.y, yMin + camSize, yMax - camSize);
         camX = Mathf.Clamp(followTransform.position.x, xMin + camRatio, xMax - camRatio);
 
-        smoothPos = Vector3.Lerp(transform.position, new Vector3(camX, camY, -10f), smoothRate);
+        smoothPos = Vector3.Lerp(transform.position, new Vector3(camX, camY, -1000f), smoothRate);
         gameObject.transform.position = smoothPos;
     }
 }

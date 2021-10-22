@@ -8,7 +8,7 @@ public class PlayInstrument : MonoBehaviour
 {
     public float speed = 3;
     public GameObject canvas;
-    public AudioSource voice1, voice2, voice3, voice4;
+    public AudioSource voice1, voice2, voice3, voice4, song;
     public AudioClip g2, a2, b2, c3, d3, e3, f3, g3;
     int voice = 0;
     bool hasLyre = false;
@@ -28,6 +28,10 @@ public class PlayInstrument : MonoBehaviour
             hasLyre = true;
             canMove = true;
         }
+        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Environment"))
+        {
+            obj.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.y);
+        }
     }
 
     void Update()
@@ -35,6 +39,7 @@ public class PlayInstrument : MonoBehaviour
         if (canMove) DoMovement();
 
         if (hasLyre) CheckInstrumentInput();
+        transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.y);
     }
 
     void DoMovement()
@@ -104,6 +109,7 @@ public class PlayInstrument : MonoBehaviour
                 canMove = false;
                 myBody.velocity = Vector2.zero;
                 collision.gameObject.GetComponent<AudioSource>().Stop();
+                Destroy(GameObject.Find("Sound trigger"));
                 canvas.SendMessage("StartDialogue");
                 break;
             case "Lyre Item":
@@ -122,6 +128,15 @@ public class PlayInstrument : MonoBehaviour
                 canMove = false;
                 myBody.velocity = Vector2.zero;
                 break;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.name == "Sound trigger")
+        {
+            if (transform.position.x < other.transform.position.x) song.maxDistance = 48.3f;
+            else song.maxDistance = 65.5f;
         }
     }
 }

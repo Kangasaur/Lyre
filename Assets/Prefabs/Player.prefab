@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 885419844780237308}
   - component: {fileID: 885419844780237309}
   - component: {fileID: 885419844780237307}
+  - component: {fileID: 6331295140632062570}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -408,6 +409,7 @@ MonoBehaviour:
   voice2: {fileID: 885419843900271174}
   voice3: {fileID: 885419843631896005}
   voice4: {fileID: 885419844946031290}
+  song: {fileID: 0}
   g2: {fileID: 8300000, guid: 262b7eccbce4dd4468e9ec8c319791c6, type: 3}
   a2: {fileID: 8300000, guid: 41648aa82bac3ae4aa9c6f9ea55f4db0, type: 3}
   b2: {fileID: 8300000, guid: 803e6e74666172044abaf160e5b4dc13, type: 3}
@@ -416,6 +418,14 @@ MonoBehaviour:
   e3: {fileID: 8300000, guid: 76862bd9b8f0d474082593b3538833d5, type: 3}
   f3: {fileID: 8300000, guid: b316076c371c27e4a83458c688efa426, type: 3}
   g3: {fileID: 8300000, guid: 53f8808852e3c924cac4dc73b92430d3, type: 3}
+--- !u!81 &6331295140632062570
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885419844780237296}
+  m_Enabled: 1
 --- !u!1 &885419844946031292
 GameObject:
   m_ObjectHideFlags: 0

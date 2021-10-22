@@ -1,0 +1,744 @@
+fileFormatVersion: 2
+guid: 97bb4d53d88c71b4c9b0104113c8e2bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8439137934839956546
+    second: lyre_sprites 1_0
+  - first:
+      213: -4724711052544810958
+    second: lyre_sprites 1_1
+  - first:
+      213: -3258120461210608906
+    second: lyre_sprites 1_2
+  - first:
+      213: -6234635194965055478
+    second: lyre_sprites 1_3
+  - first:
+      213: 8041371828082906409
+    second: lyre_sprites 1_4
+  - first:
+      213: -4543550469594214201
+    second: lyre_sprites 1_5
+  - first:
+      213: 532539564812090178
+    second: lyre_sprites 1_6
+  - first:
+      213: 6051224359449952419
+    second: lyre_sprites 1_7
+  - first:
+      213: -8501590674154612685
+    second: lyre_sprites 1_8
+  - first:
+      213: -1647950181571743047
+    second: lyre_sprites 1_9
+  - first:
+      213: -8084351173467433377
+    second: lyre_sprites 1_10
+  - first:
+      213: -7900267201948498607
+    second: lyre_sprites 1_11
+  - first:
+      213: 5495452667670612304
+    second: lyre_sprites 1_12
+  - first:
+      213: 2993162089744498218
+    second: lyre_sprites 1_13
+  - first:
+      213: -8597320438490687722
+    second: lyre_sprites 1_14
+  - first:
+      213: 9056752999026141099
+    second: lyre_sprites 1_15
+  - first:
+      213: -4788688978145544747
+    second: lyre_sprites 1_16
+  - first:
+      213: 3875477432649807443
+    second: lyre_sprites 1_17
+  - first:
+      213: 2272458218794256899
+    second: lyre_sprites 1_18
+  - first:
+      213: -3478081103797545336
+    second: lyre_sprites 1_19
+  - first:
+      213: -5911922703836338246
+    second: lyre_sprites 1_20
+  - first:
+      213: -1640214223617634960
+    second: lyre_sprites 1_21
+  - first:
+      213: -3432732063648815005
+    second: lyre_sprites 1_22
+  - first:
+      213: -3029475434945787642
+    second: lyre_sprites 1_23
+  - first:
+      213: 4270226558761384516
+    second: lyre_sprites 1_24
+  - first:
+      213: 5239510710111325724
+    second: lyre_sprites 1_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lyre_sprites 1_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 237
+        width: 50
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244c8a04d37dd1570800000000000000
+      internalID: 8439137934839956546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_1
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 237
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23064be84547e6eb0800000000000000
+      internalID: -4724711052544810958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 242
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa1c1ae3b4d8c2d0800000000000000
+      internalID: -3258120461210608906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 242
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08a5fb92502a79a0800000000000000
+      internalID: -6234635194965055478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_4
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 242
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92517b79211b89f60800000000000000
+      internalID: 8041371828082906409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_5
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 242
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c017c0bbe012f0c0800000000000000
+      internalID: -4543550469594214201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 243
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b3775a9e5f36700800000000000000
+      internalID: 532539564812090178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 186
+        width: 80
+        height: 77
+      alignment: 9
+      pivot: {x: 0.50341547, y: 0.10798982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a084318e744af350800000000000000
+      internalID: 6051224359449952419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_8
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 129
+        width: 56
+        height: 134
+      alignment: 9
+      pivot: {x: 0.55340356, y: 0.08680247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3389d314358440a80800000000000000
+      internalID: -8501590674154612685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_9
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 198
+        width: 53
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5636689, y: 0.15606995}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b230e38a0e4129e0800000000000000
+      internalID: -1647950181571743047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 128
+        width: 23
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5616f1c07d9ecf80800000000000000
+      internalID: -8084351173467433377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_11
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 127
+        width: 16
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155c03556dc9c5290800000000000000
+      internalID: -7900267201948498607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_12
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 126
+        width: 16
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059ca78c515c34c40800000000000000
+      internalID: 5495452667670612304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_13
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 127
+        width: 24
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ef26aef09d98920800000000000000
+      internalID: 2993162089744498218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_14
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 127
+        width: 17
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6179e8b9c9e20b880800000000000000
+      internalID: -8597320438490687722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_15
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 160
+        width: 98
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7286d2edc00bd70800000000000000
+      internalID: 9056752999026141099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_16
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 170
+        width: 86
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d57ec5feb82b8db0800000000000000
+      internalID: -4788688978145544747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_17
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 131
+        width: 98
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356722c113678c530800000000000000
+      internalID: 3875477432649807443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_18
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 148
+        width: 67
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a0622c5b4698f10800000000000000
+      internalID: 2272458218794256899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_19
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 105
+        width: 62
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886162ce9af5bbfc0800000000000000
+      internalID: -3478081103797545336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_20
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 108
+        width: 49
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7a442af91a4fda0800000000000000
+      internalID: -5911922703836338246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_21
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 250
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d4ab59ad9cc39e0800000000000000
+      internalID: -1640214223617634960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_22
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 41
+        width: 56
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3686e11206c7c50d0800000000000000
+      internalID: -3432732063648815005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_23
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 41
+        width: 56
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609c84c842425f5d0800000000000000
+      internalID: -3029475434945787642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_24
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 41
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a39693e64e24b30800000000000000
+      internalID: 4270226558761384516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_sprites 1_25
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 38
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e4a011b3b76b840800000000000000
+      internalID: 5239510710111325724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
