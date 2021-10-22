@@ -13,14 +13,17 @@ public class PlayInstrument : MonoBehaviour
     int voice = 0;
     bool hasLyre = false;
     bool canMove = false;
+    bool isAtSpellPlace = false;
     List<AudioClip> playedNotes = new List<AudioClip>();
     AudioClip[] sunSong;
     Rigidbody2D myBody;
+    Animator animator;
     float hmove, vmove;
 
     private void Start()
     {
         myBody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         sunSong = new AudioClip[] { g2, d3, c3, g3 };
         Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "Room 2")
@@ -47,6 +50,8 @@ public class PlayInstrument : MonoBehaviour
         hmove = Input.GetAxis("Horizontal") * speed;
         vmove = Input.GetAxis("Vertical") * speed;
         myBody.velocity = new Vector2(hmove, vmove);
+        animator.SetFloat("hdir", hmove);
+        animator.SetFloat("vdir", vmove);
     }
 
     void CheckInstrumentInput()
@@ -88,11 +93,9 @@ public class PlayInstrument : MonoBehaviour
 
         if (note == g2) playedNotes.Clear();
         playedNotes.Add(note);
-        if (playedNotes.ToArray().SequenceEqual(sunSong) && GameObject.Find("Sun"))
+        if (playedNotes.ToArray().SequenceEqual(sunSong) && isAtSpellPlace)
         {
-            GameObject.Find("Sun").GetComponent<SpriteRenderer>().enabled = true;
-            GameObject.Find("Sun Rays").GetComponent<SpriteRenderer>().enabled = true;
-            canvas.SendMessage("Deactivate");
+            Destroy(GameObject.Find("Door"));
         }
     }
 
@@ -107,6 +110,8 @@ public class PlayInstrument : MonoBehaviour
         {
             case "old man":
                 canMove = false;
+                animator.SetFloat("hdir", 0f);
+                animator.SetFloat("vdir", 0f);
                 myBody.velocity = Vector2.zero;
                 collision.gameObject.GetComponent<AudioSource>().Stop();
                 Destroy(GameObject.Find("Sound trigger"));
@@ -116,17 +121,21 @@ public class PlayInstrument : MonoBehaviour
                 canvas.SendMessage("ActivateLyre");
                 hasLyre = true;
                 canMove = false;
+                animator.SetBool("hasLyre", true);
+                animator.SetFloat("hdir", 0f);
+                animator.SetFloat("vdir", 0f);
                 myBody.velocity = Vector2.zero;
                 Destroy(collision.gameObject);
                 break;
             case "Room Portal":
                 SceneManager.LoadScene(1);
                 break;
-            case "Sun Song":
-                canvas.SendMessage("ActivateLetter");
-                Destroy(collision.gameObject);
-                canMove = false;
-                myBody.velocity = Vector2.zero;
+            case "Spell place":
+                if (hasLyre)
+                {
+                    isAtSpellPlace = true;
+                    GameObject.Find("Prompt").GetComponent<SpriteRenderer>().enabled = true;
+                }
                 break;
         }
     }
@@ -137,6 +146,11 @@ public class PlayInstrument : MonoBehaviour
         {
             if (transform.position.x < other.transform.position.x) song.maxDistance = 48.3f;
             else song.maxDistance = 65.5f;
+        }
+        else if (other.gameObject.name == "Spell place")
+        {
+            isAtSpellPlace = false;
+            GameObject.Find("Prompt").GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 }
