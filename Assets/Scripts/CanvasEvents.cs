@@ -5,7 +5,7 @@ using TMPro;
 
 public class CanvasEvents : MonoBehaviour
 {
-    public GameObject letter, dialogueText, lyre, lyreSmall, continueText, oldMan, player;
+    public GameObject dialogueText, lyre, lyreSmall, continueText, oldMan, player;
     string[] dialogue = new string[]
     {
         "You finally made it here.",
@@ -36,12 +36,6 @@ public class CanvasEvents : MonoBehaviour
         }
     }
 
-    void ActivateLetter()
-    {
-        letter.SetActive(true);
-        continueText.SetActive(true);
-    }
-
     void ActivateLyre()
     {
         lyre.SetActive(true);
@@ -57,13 +51,7 @@ public class CanvasEvents : MonoBehaviour
 
     void Deactivate()
     {
-        if (letter.activeSelf)
-        {
-            letter.SetActive(false);
-            continueText.SetActive(false);
-            player.SendMessage("AllowMove");
-        }
-        else if (dialogueText.activeSelf)
+        if (dialogueText.activeSelf)
         {
             diaIndex++;
             if (diaIndex == dialogue.Length)

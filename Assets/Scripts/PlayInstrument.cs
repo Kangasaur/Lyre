@@ -12,7 +12,7 @@ public class PlayInstrument : MonoBehaviour
     public AudioClip g2, a2, b2, c3, d3, e3, f3, g3, pickup;
     int voice = 0;
     bool hasLyre = false;
-    bool canMove = false;
+    bool canMove = true;
     bool isAtSpellPlace = false;
     List<AudioClip> playedNotes = new List<AudioClip>();
     AudioClip[] sunSong;
@@ -25,16 +25,12 @@ public class PlayInstrument : MonoBehaviour
         myBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sunSong = new AudioClip[] { g2, d3, c3, g3 };
-        Scene scene = SceneManager.GetActiveScene();
-        if (scene.name == "Room 2")
-        {
-            hasLyre = true;
-            canMove = true;
-        }
         foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Environment"))
         {
             obj.transform.position = new Vector3(obj.transform.position.x, obj.transform.position.y, obj.transform.position.y);
         }
+        voice4.clip = pickup;
+        voice4.Play();
     }
 
     void Update()
@@ -137,7 +133,7 @@ public class PlayInstrument : MonoBehaviour
                 Destroy(collision.gameObject);
                 break;
             case "Room Portal":
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(2);
                 break;
             case "Spell place":
                 if (hasLyre)
