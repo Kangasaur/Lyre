@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1633449800307831030, guid: fa733974d50ef3847be42a9c2866cd75, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1633449800427558276, guid: fa733974d50ef3847be42a9c2866cd75, type: 3}
       propertyPath: m_text
       value: "Boy,\n      We will meet in the forest tomorrow morning. I will be
@@ -236,12 +240,24 @@ PrefabInstance:
       value: 18.39
       objectReference: {fileID: 0}
     - target: {fileID: 1633449800427558277, guid: fa733974d50ef3847be42a9c2866cd75, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.78123
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633449800427558277, guid: fa733974d50ef3847be42a9c2866cd75, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.78123
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633449800427558277, guid: fa733974d50ef3847be42a9c2866cd75, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.78123
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633449800427558277, guid: fa733974d50ef3847be42a9c2866cd75, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -120
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 1633449800427558277, guid: fa733974d50ef3847be42a9c2866cd75, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 129
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 1633449800427558330, guid: fa733974d50ef3847be42a9c2866cd75, type: 3}
       propertyPath: m_IsActive
