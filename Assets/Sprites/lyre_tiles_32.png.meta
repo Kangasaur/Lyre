@@ -22,25 +22,52 @@ TextureImporter:
     second: lyre_tiles_32_5
   - first:
       213: 6848129829936445698
-    second: lyre_tiles_32_6
-  - first:
-      213: 4744066172862420640
-    second: lyre_tiles_32_7
-  - first:
-      213: 5575383043275387120
-    second: lyre_tiles_32_8
-  - first:
-      213: 1412648012941977527
-    second: lyre_tiles_32_9
-  - first:
-      213: -3948051003812723042
     second: lyre_tiles_32_10
   - first:
-      213: 2853342064459128257
+      213: 4744066172862420640
+    second: lyre_tiles_32_12
+  - first:
+      213: 5575383043275387120
     second: lyre_tiles_32_11
+  - first:
+      213: 1412648012941977527
+    second: lyre_tiles_32_10
+  - first:
+      213: -3948051003812723042
+    second: lyre_tiles_32_12
+  - first:
+      213: 2853342064459128257
+    second: lyre_tiles_32_8
   - first:
       213: 6345396473869082734
     second: lyre_tiles_32_12
+  - first:
+      213: 1566904415070212407
+    second: lyre_tiles_32_10
+  - first:
+      213: 7373540357454167062
+    second: lyre_tiles_32_12
+  - first:
+      213: 1807573086715825321
+    second: lyre_tiles_32_11
+  - first:
+      213: -2375716062553001564
+    second: lyre_tiles_32_12
+  - first:
+      213: 5689450386950443301
+    second: lyre_tiles_32_11
+  - first:
+      213: -2387564423454270742
+    second: lyre_tiles_32_12
+  - first:
+      213: -8160220532552294451
+    second: lyre_tiles_32_19
+  - first:
+      213: 7320906277857630236
+    second: lyre_tiles_32_20
+  - first:
+      213: 3563192665719437454
+    second: lyre_tiles_32_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -150,7 +177,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,7 +198,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,7 +219,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,7 +240,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -234,7 +261,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -255,7 +282,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -263,6 +290,69 @@ TextureImporter:
       bones: []
       spriteID: 546b3820cca3fff00800000000000000
       internalID: 1152704677520062021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_tiles_32_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2093e112cc1790f50800000000000000
+      internalID: 6848129829936445698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_tiles_32_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a659609c0f46d140800000000000000
+      internalID: 4744066172862420640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_tiles_32_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f07a25965dbf5d40800000000000000
+      internalID: 5575383043275387120
       vertices: []
       indices: 
       edges: []
@@ -276,14 +366,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2093e112cc1790f50800000000000000
-      internalID: 6848129829936445698
+      spriteID: 7b7611c12ebba9310800000000000000
+      internalID: 1412648012941977527
       vertices: []
       indices: 
       edges: []
@@ -297,14 +387,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a659609c0f46d140800000000000000
-      internalID: 4744066172862420640
+      spriteID: e964e9a9784b539c0800000000000000
+      internalID: -3948051003812723042
       vertices: []
       indices: 
       edges: []
@@ -318,14 +408,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f07a25965dbf5d40800000000000000
-      internalID: 5575383043275387120
+      spriteID: 1cd14ce6d7b199720800000000000000
+      internalID: 2853342064459128257
       vertices: []
       indices: 
       edges: []
@@ -334,19 +424,19 @@ TextureImporter:
       name: lyre_tiles_32_9
       rect:
         serializedVersion: 2
-        x: 128
+        x: 127
         y: 32
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b7611c12ebba9310800000000000000
-      internalID: 1412648012941977527
+      spriteID: e60abff39706f0850800000000000000
+      internalID: 6345396473869082734
       vertices: []
       indices: 
       edges: []
@@ -360,14 +450,77 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e964e9a9784b539c0800000000000000
-      internalID: -3948051003812723042
+      spriteID: 73150418343ceb510800000000000000
+      internalID: 1566904415070212407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_tiles_32_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61cff0f63e3145660800000000000000
+      internalID: 7373540357454167062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_tiles_32_17
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9acc04b352ac51910800000000000000
+      internalID: 1807573086715825321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_tiles_32_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1b65404d2c70fd0800000000000000
+      internalID: -2375716062553001564
       vertices: []
       indices: 
       edges: []
@@ -381,14 +534,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cd14ce6d7b199720800000000000000
-      internalID: 2853342064459128257
+      spriteID: 521d361abfcf4fe40800000000000000
+      internalID: 5689450386950443301
       vertices: []
       indices: 
       edges: []
@@ -402,14 +555,77 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e60abff39706f0850800000000000000
-      internalID: 6345396473869082734
+      spriteID: aead5a58ecaadded0800000000000000
+      internalID: -2387564423454270742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_tiles_32_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf1f5c09a211ce80800000000000000
+      internalID: -8160220532552294451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_tiles_32_20
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1891adc875199560800000000000000
+      internalID: 7320906277857630236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lyre_tiles_32_21
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88fb72d9d0037130800000000000000
+      internalID: 3563192665719437454
       vertices: []
       indices: 
       edges: []

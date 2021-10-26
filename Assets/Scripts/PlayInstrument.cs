@@ -8,7 +8,7 @@ public class PlayInstrument : MonoBehaviour
 {
     public float speed = 3;
     public GameObject canvas;
-    public AudioSource voice1, voice2, voice3, voice4, song;
+    public AudioSource voice1, voice2, voice3, voice4, song, echo;
     public AudioClip g2, a2, b2, c3, d3, e3, f3, g3;
     int voice = 0;
     bool hasLyre = false;
@@ -47,8 +47,8 @@ public class PlayInstrument : MonoBehaviour
 
     void DoMovement()
     {
-        hmove = Input.GetAxis("Horizontal") * speed;
-        vmove = Input.GetAxis("Vertical") * speed;
+        hmove = Input.GetAxisRaw("Horizontal") * speed;
+        vmove = Input.GetAxisRaw("Vertical") * speed;
         myBody.velocity = new Vector2(hmove, vmove);
         animator.SetFloat("hdir", hmove);
         animator.SetFloat("vdir", vmove);
@@ -95,6 +95,8 @@ public class PlayInstrument : MonoBehaviour
         playedNotes.Add(note);
         if (playedNotes.ToArray().SequenceEqual(sunSong) && isAtSpellPlace)
         {
+            GameObject stone = GameObject.Find("Spell stone");
+            stone.GetComponent<AudioSource>().Play();
             Destroy(GameObject.Find("Door"));
         }
     }
@@ -114,6 +116,7 @@ public class PlayInstrument : MonoBehaviour
                 animator.SetFloat("vdir", 0f);
                 myBody.velocity = Vector2.zero;
                 collision.gameObject.GetComponent<AudioSource>().Stop();
+                foreach (AudioSource source in collision.gameObject.GetComponentsInChildren<AudioSource>()) source.Stop();
                 Destroy(GameObject.Find("Sound trigger"));
                 canvas.SendMessage("StartDialogue");
                 break;
@@ -144,8 +147,16 @@ public class PlayInstrument : MonoBehaviour
     {
         if (other.gameObject.name == "Sound trigger")
         {
-            if (transform.position.x < other.transform.position.x) song.maxDistance = 48.3f;
-            else song.maxDistance = 65.5f;
+            if (transform.position.x < other.transform.position.x)
+            {
+                song.maxDistance = 46.3f;
+                echo.maxDistance = 21f;
+            }
+            else
+            {
+                song.maxDistance = 74.1f;
+                echo.maxDistance = 44.25f;
+            }
         }
         else if (other.gameObject.name == "Spell place")
         {
