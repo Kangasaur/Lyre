@@ -9,7 +9,7 @@ public class PlayInstrument : MonoBehaviour
     public float speed = 3;
     public GameObject canvas;
     public AudioSource voice1, voice2, voice3, voice4, song, echo;
-    public AudioClip g2, a2, b2, c3, d3, e3, f3, g3;
+    public AudioClip g2, a2, b2, c3, d3, e3, f3, g3, pickup;
     int voice = 0;
     bool hasLyre = false;
     bool canMove = false;
@@ -97,7 +97,11 @@ public class PlayInstrument : MonoBehaviour
         {
             GameObject stone = GameObject.Find("Spell stone");
             stone.GetComponent<AudioSource>().Play();
-            Destroy(GameObject.Find("Door"));
+            stone.GetComponent<Animator>().SetBool("isActivated", true);
+            GameObject door = GameObject.Find("Door");
+            door.GetComponent<Animator>().SetBool("open", true);
+            door.GetComponent<AudioSource>().Play();
+            door.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 
@@ -115,7 +119,8 @@ public class PlayInstrument : MonoBehaviour
                 animator.SetFloat("hdir", 0f);
                 animator.SetFloat("vdir", 0f);
                 myBody.velocity = Vector2.zero;
-                collision.gameObject.GetComponent<AudioSource>().Stop();
+                collision.gameObject.GetComponent<AudioSource>().loop = false;
+                collision.gameObject.GetComponent<AudioSource>().volume = 0.6f;
                 foreach (AudioSource source in collision.gameObject.GetComponentsInChildren<AudioSource>()) source.Stop();
                 Destroy(GameObject.Find("Sound trigger"));
                 canvas.SendMessage("StartDialogue");
@@ -123,7 +128,8 @@ public class PlayInstrument : MonoBehaviour
             case "Lyre Item":
                 canvas.SendMessage("ActivateLyre");
                 hasLyre = true;
-                canMove = false;
+                voice4.clip = pickup;
+                voice4.Play();
                 animator.SetBool("hasLyre", true);
                 animator.SetFloat("hdir", 0f);
                 animator.SetFloat("vdir", 0f);

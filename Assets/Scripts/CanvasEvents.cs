@@ -13,11 +13,14 @@ public class CanvasEvents : MonoBehaviour
         "It is a good desire, and you are finally ready.",
         "You have built up your body to be worthy of the responsibility of music.",
         "Meanwhile, I am old, and this lyre has become mere company to me.",
-        "I will give it to you. I expect you will pick up its magic soon enough.",
-        "You will now forge your own path. Or rather...",
-        "You will take the path that the lyre shows you.",
+        "I will give it to you.",
+        "I expect you will pick up its magic soon enough.",
+        "You will now forge your own path.",
+        "Or rather, you will take the path that the lyre shows you.",
+        "The Door of the Sun is close by. It will start your journey.",
         "That is all. Take this, and go forth."
     };
+    public AudioClip[] dialogueSounds;
     int diaIndex = 0;
 
     private void Start()
@@ -42,13 +45,14 @@ public class CanvasEvents : MonoBehaviour
     void ActivateLyre()
     {
         lyre.SetActive(true);
-        continueText.SetActive(true);
     }
 
     void StartDialogue()
     {
         dialogueText.SetActive(true);
         continueText.SetActive(true);
+        oldMan.GetComponent<AudioSource>().clip = dialogueSounds[diaIndex];
+        oldMan.GetComponent<AudioSource>().Play();
     }
 
     void Deactivate()
@@ -56,12 +60,6 @@ public class CanvasEvents : MonoBehaviour
         if (letter.activeSelf)
         {
             letter.SetActive(false);
-            continueText.SetActive(false);
-            player.SendMessage("AllowMove");
-        }
-        else if (lyre.activeSelf)
-        {
-            lyre.SetActive(false);
             continueText.SetActive(false);
             player.SendMessage("AllowMove");
         }
@@ -76,7 +74,12 @@ public class CanvasEvents : MonoBehaviour
                 lyreSmall.SetActive(true);
                 player.SendMessage("AllowMove");
             }
-            else dialogueText.GetComponent<TextMeshProUGUI>().text = dialogue[diaIndex];
+            else
+            {
+                oldMan.GetComponent<AudioSource>().clip = dialogueSounds[diaIndex];
+                oldMan.GetComponent<AudioSource>().Play();
+                dialogueText.GetComponent<TextMeshProUGUI>().text = dialogue[diaIndex];
+            }
         }
     }
 }
